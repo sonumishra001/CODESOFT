@@ -4,5 +4,5 @@
 
 ## Landing Page (https://landingpage-nine-virid.vercel.app/)
 
-## Portfolio (https://portfolio-1c80fjfmf-sonumishra001s-projects.vercel.app/)
+## Portfolio (https://portfolio-indol-one-93.vercel.app/)
 
