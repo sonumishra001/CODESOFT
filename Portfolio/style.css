@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* :root{
+    --primary-color:#ffffff;
+    --primary-shade:#f7f5f2;
+    --secondary-color:#000000;
+    --secondary-shade:#4b4c4c;
+    --red-color:rgb(150, 0, 0);
+    --red-shade:#b20600;
+    --accent-color:#ffee63; */
+body {
+    background-color: rgb(12, 2, 46);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 20px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: #0C022E;
+    /* border: 4px solid red; */
+
+}
+
+.logo {
+    position: relative;
+    top: 15px;
+    border-radius: 50%;
+
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    margin-right: 62px;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+.navbar a.active {
+    background: linear-gradient(55deg, red, rgb(123, 0, 255));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    filter: brightness(1);
+    filter: contrast(5);
+}
+
+
+.navbar a:hover {
+    /* font-weight: bolder; */
+    border-bottom: 4px solid rgb(200, 0, 255);
+    /* transform: scale(1.5); */
+    transition: all 0.2s ease-in-out;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+
+    /* border: 4px solid yellow; */
+
+}
+
+.hero {
+    max-width: 580px;
+    /* border: 2px solid yellow; */
+    margin-right: 50px;
+
+}
+
+.hero h1 {
+    font-size: 41px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#name {
+
+    filter: brightness(1);
+    background: linear-gradient(55deg, red, rgb(123, 0, 255));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.hero h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgb(255, 50, 135);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 16px;
+    color: white;
+    margin: 20px 0 40px;
+}
+
+.btn {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    padding: 2px 3px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    background: linear-gradient(55deg, red, rgb(123, 0, 255));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 10px rgb(157, 0, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(2);
+}
+
+.btn:hover {
+    transition: 0.2s ease-in-out ;
+    transform: scale(1.1);
+    
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 180px;
+    margin-bottom: -180px;
+}
+
+
+.social a {
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px 10px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.social a:hover {
+    transform: scale(1.3);
+}
+
+.hero-img {
+    height: 410px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    /* margin-left: 150px; */
+    /* border: 4px solid yellow; */
+}
+
+/* .hero-img .glowing-circle{
+    width: 100%;
+    height: 100%;
+    outline: 5px double rgb(49, 0, 128);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.hero-img .glowing-circle {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px rgb(162, 0, 255);
+    background-color: #4B0082;
+}
+
+.glowing-circle .image {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    z-index: 1;
+    border-radius: 50%;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    overflow: hidden;
+
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: opacity(0.9);
+    animation: imgAni 2s ease-in-out alternate infinite;
+
+}
+
+section#section {
+    position: relative;
+    margin-top: 6%;
+    /* border: 2px solid yellowgreen; */
+}
+
+@keyframes imgAni {
+    0% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.project-heading {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(123, 0, 255);
+    /* background-color: green; */
+    padding: 20px;
+    margin: 10px;
+    transition: all .8s ease-in-out;
+
+}
+
+
+.project-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-container .projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 90%;
+    width: 90%; */
+    /* border-radius: 50%; */
+    /* gap: ; */
+}
+
+.project-container .projects img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 4px solid purple;
+    opacity: .4;
+    transition: 350ms ease-in-out;
+}
+
+.project-container .projects img:hover {
+    transform: scale(1.1);
+    /* filter: invert(2); */
+    /* filter: opacity(1); */
+    opacity: 1;
+}
+
+@media (max-width: 524px) {
+    .navbar {
+        justify-content: end;
+        font-size: small;
+        /* margin-left: 80%; */
+        width: 45%;
+    }
+    .navbar ul{
+        /* text-align: right; */
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 110px;
+
+
+    }
+    .navbar ul li a{
+        
+        font-size: 12px;
+        /* margin-left: 40px; */
+    }
+
+    .home {
+        display: block;
+        padding: 120px 20px 100px 20px;
+    }
+
+    .hero-img {
+        width: 320px;
+        height: 320px;
+        margin-top: 200px;
+    }
+
+    section#section {
+        position: relative;
+        margin-top: 100%;
+    }
+}
